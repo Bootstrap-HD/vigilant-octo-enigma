@@ -60,8 +60,7 @@ public class Main {
         System.out.print("Input replacement text:");
         String replacementText = scanner.nextLine();
         System.out.print("Input text for replacement:");
-        String
-                textForReplacement = scanner.nextLine();
+        String textForReplacement = scanner.nextLine();
         System.out.println("First text with replacement: " + textOne.replace(replacementText, textForReplacement));
         System.out.println("First text lowercase: " + textOne.toLowerCase());
 
@@ -158,20 +157,27 @@ public class Main {
         System.out.println();
     }
 
-    public static void task4() {
-        int channel;
-        String[] array = new String[]{"1 - Форсик", "2 - Хант"};
-        do {
-            System.out.println("Ввeдите номер канала(0 - выход ): ");
-            Scanner scanner = new Scanner(System.in);
-            channel = scanner.nextInt();
+//    public static void task4() {
+//        int channel;
+//        String[] array = new String[]{"1 - Форсик", "2 - Хант"};
+//        do {
+//            System.out.println("Ввeдите номер канала(0 - выход ): ");
+//            Scanner scanner = new Scanner(System.in);
+//            channel = scanner.nextInt();
+//
+//            switch (channel) {
+//                case 0 -> System.out.println("Выход");
+//                case 1 -> System.out.println(array[0]);
+//                case 2 -> System.out.println(array[1]);
+//                default -> System.out.println("Такого канала не существует");
+//            }
+//        } while (channel != 0);
+//    }
+public static void task4() {
+        String[] array = {"Форсик", "Хант"};
+        int channel;         Scanner scanner = new Scanner(System.in);
+        do {             System.out.println("Ввeдите номер канала(0 - выход ): ");             channel = scanner.nextInt();
+            System.out.println(channel > 0 && channel <= array.length ? array[channel - 1] : (channel == 0 ? "Выход" :"Такого канала не существует"));         }
+        while (channel != 0);     }
 
-            switch (channel) {
-                case 0 -> System.out.println("Выход");
-                case 1 -> System.out.println(array[0]);
-                case 2 -> System.out.println(array[1]);
-                default -> System.out.println("Такого канала не существует");
-            }
-        } while (channel != 0);
-    }
 }
