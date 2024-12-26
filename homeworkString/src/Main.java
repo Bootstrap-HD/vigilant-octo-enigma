@@ -22,7 +22,7 @@ public class Main {
     }
 
     public static void homework2() {
-        System.out.println("I'm Vitar Iliukovich i'm bartender.");
+        System.out.println("I'm Viktar Iliukovich i'm bartender.");
         byte valueByte = 4;
         short valueShort = 15;
         int valueInt = 43;
@@ -175,9 +175,13 @@ public class Main {
 //    }
 public static void task4() {
         String[] array = {"Форсик", "Хант"};
-        int channel;         Scanner scanner = new Scanner(System.in);
-        do {             System.out.println("Ввeдите номер канала(0 - выход ): ");             channel = scanner.nextInt();
-            System.out.println(channel > 0 && channel <= array.length ? array[channel - 1] : (channel == 0 ? "Выход" :"Такого канала не существует"));         }
+        int channel;
+        Scanner scanner = new Scanner(System.in);
+        do {
+            System.out.println("Ввeдите номер канала(0 - выход ): ");
+            channel = scanner.nextInt();
+            System.out.println(channel > 0 && channel <= array.length ? array[channel - 1] : (channel == 0 ? "Выход" :"Такого канала не существует"));
+        }
         while (channel != 0);     }
 
 }
